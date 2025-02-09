@@ -1,0 +1,7 @@
+node_modules
+.DS_Store
+HW01.synctex.gz
+HW01.log
+HW01.aux
+HW01.fls
+HW01.fdb_latexmk
