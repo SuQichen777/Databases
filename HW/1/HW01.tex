@@ -48,7 +48,7 @@
         \caption{RS2}
     \end{figure}
     \subsection{RM}
-    events(\underline{eventID}, event\_name, date, @VenueID)
+    events(\underline{eventID}, event\_name, date, @venueID)
     \\venues(\underline{venueID}, name, location, capacity)
     \\attendees(\underline{@attendeeID}, name, email\_address)
     \\tickets(\underline{ticketID}, @eventID, @attendeeID, price, ticket\_type)
@@ -64,7 +64,7 @@
     students(\underline{studentID}, name, date\_of\_birth, major)
     \\courses(\underline{courseID}, course\_name, credits, @departmentID)
     \\departments(\underline{departmentID}, department\_name, office\_location)
-    \\enrollments(\underline{EntollmentID}, @studentID, @courseID, grade, enrollment\_date)
+    \\enrollments(\underline{enrollmentID}, @studentID, @courseID, grade, enrollment\_date)
     \\instructors(\underline{instructorID}, name, email, @departmentID)
 
     \section{RS4}
