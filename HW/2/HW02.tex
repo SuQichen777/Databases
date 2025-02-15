@@ -12,7 +12,8 @@
 \geometry{a4paper, scale=0.8}   
 \linespread{1.5}
 \definecolor{dark_green}{RGB}{0,102,51}
-\title{Assignment 1}
+% \title{Assignment 2 - Part1: Functional Dependency}
+\title{Assignment 2 - Part2: Normalization}
 \author{Jiaxi Zhang}
 \date{\today}
 \begin{document}
@@ -25,6 +26,23 @@
     \\Date due: February 16, 11:59pm
     \\I pledge that I have completed this assignment without collaborating with anyone else, in conformance with the NYU School of Engineering Policies and Procedures on Academic Misconduct.
     \end{flushleft}
+    % \section{Problem 1}
+    % \subsection{Attribute Closures}
+    % StudentID+ = \{StudentID, Name\}, Name+ = \{Name\}
+    % \subsection{Compute F+}
+    % F+ = \{StudentID $\rightarrow$ \{StudentID, Name\}, Major $\rightarrow$ \{Major, Advisor\}, (StudentID, Major) 
+    % $\rightarrow$ \{StudentID, Name, Year, Major, Advisor\}\}
+    % \subsection{Candidate Keys}
+    % (StudentID, Major)
+
+    % \section{Problem 2}
+    % \subsection{F+}
+    % F+ = \{CourseID $\rightarrow$ \{CourseID, CourseName, Instructor, Credits\}, Instructor $\rightarrow$ \{Instructor, CourseID, Credits, CourseName\},
+    % CourseName $\rightarrow$ \{CourseName, Instructor, Credits, CourseID\}, (CourseID, Semester) $\rightarrow$ \{CourseID, Semester, Credits, CourseName, Instructor\}\}
+    % \subsection{Candidate Keys}
+    % (CourseID, Semester), (CourseName, Semester), (Instructor, Semester)
+
+
 
 \end{CJK*}
 \end{document}
