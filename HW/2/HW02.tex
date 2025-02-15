@@ -42,6 +42,25 @@
     % \subsection{Candidate Keys}
     % (CourseID, Semester), (CourseName, Semester), (Instructor, Semester)
 
+    This table does not satisfy 3NF because there is a transitive dependency between ISBN $\rightarrow$ AuthorID $\rightarrow$ AuthorName,
+    also ISBN $\rightarrow$ Publisher $\rightarrow$ PublisherAddress. As
+    a result, we need to decompose the table into 3 tables to satisfy 3NF and use 
+    foreign keys to link them together.
+
+    They are:
+    \begin{itemize}
+        \item Books(\underline{ISBN}, Title, @AuthorID, @Publisher)
+        \item Authors(\underline{AuthorID}, AuthorName)
+        \item Publishers(\underline{Publisher}, PublisherAddress)
+    \end{itemize}
+    Example:
+    % image
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{Example.png}
+        \caption{Example}
+    \end{figure}
+
 
 
 \end{CJK*}
